@@ -4,8 +4,7 @@ class ProductsController < ApplicationController
     @products = Product.all.order(created_at: :desc)
   end
 
-  def show
-    raise "error" 
+  def show    
     @product = Product.find params[:id]
   end
 
